@@ -1,0 +1,64 @@
+#ifndef _NN_H_
+#define _NN_H_
+
+#define LAYER_0_INPUTS  		784
+#define LAYER_0_OUTPUTS 		6272
+#define LAYER_1_INPUTS  		6272
+#define LAYER_1_OUTPUTS 		8
+#define LAYER_2_INPUTS  		8
+#define LAYER_2_OUTPUTS 		8
+#define LAYER_3_INPUTS  		8
+#define LAYER_3_OUTPUTS 		128
+#define LAYER_4_INPUTS  		128
+#define LAYER_4_OUTPUTS 		16
+#define LAYER_5_INPUTS  		16
+#define LAYER_5_OUTPUTS 		16
+#define LAYER_6_INPUTS  		16
+#define LAYER_6_OUTPUTS 		192
+#define LAYER_7_INPUTS  		192
+#define LAYER_7_OUTPUTS 		12
+#define LAYER_8_INPUTS  		12
+#define LAYER_8_OUTPUTS 		12
+#define LAYER_9_INPUTS  		12
+#define LAYER_9_OUTPUTS 		96
+#define LAYER_10_INPUTS  		96
+#define LAYER_10_OUTPUTS 		8
+#define LAYER_11_INPUTS  		8
+#define LAYER_11_OUTPUTS 		8
+#define LAYER_12_INPUTS  		8
+#define LAYER_12_OUTPUTS 		320
+#define LAYER_13_INPUTS  		320
+#define LAYER_13_OUTPUTS 		40
+#define LAYER_14_INPUTS  		40
+#define LAYER_14_OUTPUTS 		40
+
+#define LAYER_0_OUTPUTS_OUTER  	8
+#define LAYER_0_OUTPUTS_INNER  	784
+#define LAYER_1_INPUTS_OUTER  	8
+#define LAYER_1_INPUTS_INNER  	784
+#define LAYER_3_OUTPUTS_OUTER  	16
+#define LAYER_3_OUTPUTS_INNER  	8
+#define LAYER_4_INPUTS_OUTER  	16
+#define LAYER_4_INPUTS_INNER  	8
+#define LAYER_6_OUTPUTS_OUTER  	12
+#define LAYER_6_OUTPUTS_INNER  	16
+#define LAYER_7_INPUTS_OUTER  	12
+#define LAYER_7_INPUTS_INNER  	16
+#define LAYER_9_OUTPUTS_OUTER  	8
+#define LAYER_9_OUTPUTS_INNER  	12
+#define LAYER_10_INPUTS_OUTER  	8
+#define LAYER_10_INPUTS_INNER  	12
+#define LAYER_12_OUTPUTS_OUTER  	40
+#define LAYER_12_OUTPUTS_INNER  	8
+#define LAYER_13_INPUTS_OUTER  	40
+#define LAYER_13_INPUTS_INNER  	8
+
+#define NN_INPUT_COUNT  LAYER_0_INPUTS
+#define NN_OUTPUT_COUNT LAYER_14_OUTPUS
+
+
+typedef float nn_t;
+
+void nn_top(nn_t outputs[NN_OUTPUT_COUNT], nn_t inputs[NN_INPUT_COUNT]);
+
+#endif
